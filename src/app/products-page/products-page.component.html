@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<ul>
+    <li *ngFor="let product of productsList">
+        {{product.productName}}
+    </li>
+</ul>
+
+<p *ngIf="isMobile">This is from mobile</p>
+<p *ngIf="!isMobile">This is from desktop</p>
+
+<button (click)="toggle()">Toggle</button>

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'flipkart-practice'`, () => {
+  it(`should have as title 'flipkart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('flipkart-practice');
+    expect(app.title).toEqual('flipkart');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('flipkart-practice app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('flipkart app is running!');
   });
 });
